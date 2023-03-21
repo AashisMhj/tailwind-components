@@ -2,9 +2,13 @@ export default {
     homePath:"/",
     //
     componentsPage: "/components",
+    buttons: "/components/buttons",
     breadCrumb: "/components/breadcrumb",
     headers: "/components/headers",
     cards: "/components/cards",
+    modal: "/components/modals",
+    textFields : "/components/text-fields",
+    newsLetters: "/components/news-letters",
     //
     layoutsPage: "/layouts",
     galleryLayoutDemo: "/layout-demo/gallery-flex",

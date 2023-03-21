@@ -2,9 +2,13 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomePage from '@/pages/Home.page.vue';
 // components
 import ComponentHomePage from '@/pages/my-components/index.vue';
+import Buttons from '@/pages/my-components/Buttons.vue'
 import BreadCrumbs from '@/pages/my-components/BreadCrumbs.vue';
 import Headers from '@/pages/my-components/Headers.vue';
 import Cards from '@/pages/my-components/Cards.vue';
+import Modals from '@/pages/my-components/Modals.vue';
+import TextFields from '@/pages/my-components/TextFields.vue'
+import NewsLetters from '@/pages/my-components/NewsLetters.vue';
 // layout demons
 import LayoutHomePage from '@/pages/layout-demos/index.vue';
 import GalleryFlexLayoutPage from '@/pages/layout-demos/GalleryFlex.page.vue'
@@ -33,6 +37,11 @@ const router = createRouter({
       component: ComponentHomePage
     },
     {
+      path: paths.buttons,
+      name: "Buttons",
+      component: Buttons
+    },
+    {
       path: paths.breadCrumb,
       name: 'BreadCrumb',
       component: BreadCrumbs
@@ -46,6 +55,21 @@ const router = createRouter({
       path: paths.cards,
       name: 'Cards',
       component: Cards
+    },
+    {
+      path: paths.modal,
+      name: 'Modal',
+      component: Modals
+    },
+    {
+      path: paths.textFields,
+      name: 'Text fields',
+      component: TextFields
+    },
+    {
+      path: paths.newsLetters,
+      name: "News Letters",
+      component: NewsLetters
     },
     // 
     {

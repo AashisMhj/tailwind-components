@@ -12,7 +12,7 @@ function toggleDropDown(){
 }
 </script>
 <template>
-    <div class="flex h-12 cursor-pointer items-center content-around truncate rounded-[5px] py-4 px=6 text=[0.875rem] text-gray-600 outline-none transition duration-300 ease-linear hover:bg-slate-50 hover:text-inherit hover:outline-none focus:bg-slate-50 focus:text-inherit focus:output-none dark:text-gray-300 dark:hover:bg-white/10 dark:focus:bg-white/10">
+    <div class="flex pl-2 h-12 cursor-pointer items-center content-around truncate rounded-[5px] py-4 px=6 text=[0.875rem] text-gray-600 outline-none transition duration-300 ease-linear hover:bg-slate-50 hover:text-inherit hover:outline-none focus:bg-slate-50 focus:text-inherit focus:output-none dark:text-gray-300 dark:hover:bg-white/10 dark:focus:bg-white/10">
         <span>
             <RouterLink :to="path">
                 {{ title }}

@@ -11,6 +11,13 @@ const resources = [
         ]
     },
     {
+        "title": "Animation",
+        "data": [
+            "https://morioh.com/p/47bef69822d6",
+            "https://tinymotion.me/"
+        ]
+    },
+    {
         "title": "Free Templates",
         "data": [
             "https://www.tailwindawesome.com/?price=free&type=template",
