@@ -1,0 +1,75 @@
+<script setup>
+import SideBarItem from "./SideBarItem.vue";
+import path from "@/router/paths";
+defineProps({
+    is_open: Boolean
+});
+const navItems = [
+    {
+        title: "Home",
+        path: path.homePath
+    },
+    {
+        title: "Components",
+        path: path.componentsPage,
+        children: [
+            {
+                title: "BreadCrumb",
+                path: path.breadCrumb
+            },
+            {
+                title: "Header",
+                path: path.headers
+            },
+            {
+                title: "Cards",
+                path: path.cards
+            }
+        ]
+    },
+    {
+        title: "Layouts",
+        path: path.layoutsPage,
+        children: [
+            {
+                title: "Gallery Flex",
+                path: path.galleryLayoutDemo
+            },
+            {
+                title: "Gallery Grid",
+                path: path.galleryGridLayoutDemo
+            },
+            {
+                title: "Description List",
+                path: path.descriptionListDemo
+            }
+        ]
+    },
+    {
+        title: "Pages",
+        path: path.pages,
+        children: [
+            {
+                title: "Page 1",
+                path: path.page1
+            }
+        ]
+    },
+    {
+        title: "Resources",
+        path: path.resourcesPage,
+    }
+]
+</script>
+<template>
+    <nav :class="{'-translate-x-full': !is_open}" class="absolute top-0 z-[1035] left-0 h-full w-60 overflow-hidden bg-red-300 shadow-[0_4px_12px_0_rgba(0,0,0,0.07),_0_2px_4px_rgba(0,0,0,0.05)] data-[te-sidenav-hidden='false']:translate-x-0 dark:bg-zinc-800" >
+        <div class="flex justify-center pt-4 leading-4">
+            <span class="text-black dark:text-white" @click="$emit('close')">Close</span>
+        </div>
+        <ul class="relative m-0 list-none px-[0.2rem]">
+            <li class="relative border-b-2" v-for="item in navItems">
+                <SideBarItem :title="item.title" :path="item.path" :children="item.children ? item.children: []" />
+            </li>
+        </ul>
+    </nav>
+</template>
