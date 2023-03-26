@@ -14,10 +14,15 @@ import LayoutHomePage from '@/pages/layout-demos/index.vue';
 import GalleryFlexLayoutPage from '@/pages/layout-demos/GalleryFlex.page.vue'
 import galleryGridLayoutDemo from '@/pages/layout-demos/GalleryGrid.page.vue';
 import DescriptionListDemo from '@/pages/layout-demos/DescriptionList.page.vue';
+// Animation
+import AnimationPage from '@/pages/animations/index.vue';
+import TransformationPage from '@/pages/animations/Transformation.vue';
+import TransitionPage from '@/pages/animations/Transition.vue';
 //
 import PageHomePage from '@/pages/landing-pages/index.vue';
 import Page1 from '@/pages/landing-pages/page1.page.vue';
 //
+import Playground from '@/pages/Playground.vue';
 import resourcePage from '@/pages/Resource.page.vue';
 import paths from './paths';
 
@@ -103,7 +108,28 @@ const router = createRouter({
       name: 'Page 1',
       component: Page1
     },
+    // animation
+    {
+      path: paths.animationPage,
+      name: 'Animation Page',
+      component: AnimationPage
+    },
+    {
+      path: paths.transformation,
+      name: 'Transformation Animation',
+      component: TransformationPage
+    },
+    {
+      path: paths.transition,
+      name: 'Transition ',
+      component: TransitionPage
+    },
     // resource
+    {
+      path: paths.playGroundPage,
+      name: 'Play ground',
+      component: Playground,
+    },
     {
       path: paths.resourcesPage,
       name: 'Resource',

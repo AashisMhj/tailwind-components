@@ -62,6 +62,20 @@ const navItems = [
         ]
     },
     {
+        title: "Animation",
+        path: path.animationPage,
+        children: [
+            {
+                title: "Transformation",
+                path: path.transformation
+            },
+            {
+                title: "Transition",
+                path: path.transition
+            }
+        ]
+    },
+    {
         title: "Pages",
         path: path.pages,
         children: [
