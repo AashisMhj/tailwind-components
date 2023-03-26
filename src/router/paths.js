@@ -18,5 +18,6 @@ export default {
     pages: "/page",
     page1: "/page/1",
     //  resources
+    playGroundPage: "/playground",
     resourcesPage: "/resources"
 }

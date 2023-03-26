@@ -72,6 +72,10 @@ const navItems = [
         ]
     },
     {
+        title: "Playground",
+        path: path.playGroundPage
+    },
+    {
         title: "Resources",
         path: path.resourcesPage,
     }
