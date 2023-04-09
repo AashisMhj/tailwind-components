@@ -9,6 +9,7 @@ import Cards from '@/pages/my-components/Cards.vue';
 import Modals from '@/pages/my-components/Modals.vue';
 import TextFields from '@/pages/my-components/TextFields.vue'
 import NewsLetters from '@/pages/my-components/NewsLetters.vue';
+import Carousel from '@/pages/my-components/Carousel.vue';
 // layout demons
 import LayoutHomePage from '@/pages/layout-demos/index.vue';
 import GalleryFlexLayoutPage from '@/pages/layout-demos/GalleryFlex.page.vue'
@@ -75,6 +76,11 @@ const router = createRouter({
       path: paths.newsLetters,
       name: "News Letters",
       component: NewsLetters
+    },
+    {
+      path: paths.carousel,
+      name: "Carousel",
+      component: Carousel
     },
     // 
     {

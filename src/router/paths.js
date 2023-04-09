@@ -9,6 +9,7 @@ export default {
     modal: "/components/modals",
     textFields : "/components/text-fields",
     newsLetters: "/components/news-letters",
+    carousel: "/components/carouse",
     //
     layoutsPage: "/layouts",
     galleryLayoutDemo: "/layout-demo/gallery-flex",

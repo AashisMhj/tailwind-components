@@ -96,11 +96,12 @@ const navItems = [
 ]
 </script>
 <template>
-    <div  v-if="is_open" class="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full">
+    <div v-if="is_open" class="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full">
         <nav :class="{ '-translate-x-full': !is_open }"
-            class="absolute top-0 z-[1035] left-0 h-full w-60 overflow-hidden bg-red-300 shadow-[0_4px_12px_0_rgba(0,0,0,0.07),_0_2px_4px_rgba(0,0,0,0.05)] data-[te-sidenav-hidden='false']:translate-x-0 dark:bg-zinc-800">
+            class="absolute top-0 z-[1035] left-0 h-full w-60 overflow-hidden bg-red-300 shadow-[0_4px_12px_0_rgba(0,0,0,0.07),_0_2px_4px_rgba(0,0,0,0.05)] dark:bg-zinc-800">
             <div class="flex justify-center pt-4 leading-4 py-3">
-                <span class="text-black dark:text-white w-full text-center text-lg cursor-pointer hover:text-gray-200" @click="$emit('close')">Close</span>
+                <span class="text-black dark:text-white w-full text-center text-lg cursor-pointer hover:text-gray-200"
+                    @click="() => $emit('close')">Close</span>
             </div>
             <ul class="relative m-0 list-none px-[0.2rem]">
                 <li class="relative border-b-2 " v-for="item in navItems">

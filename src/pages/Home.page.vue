@@ -8,7 +8,8 @@ const sections = [
         data: [
             {title: "Bread Crumb", path: paths.breadCrumb},
             {title: "Cards", path: paths.cards},
-            {title: "Headers", path: paths.headers}
+            {title: "Headers", path: paths.headers},
+            {title: "Carousel", path: paths.carousel}
         ]
     },
     {

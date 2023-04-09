@@ -39,3 +39,6 @@ const resources = [
         </section>
     </div>
 </template>
+
+<!-- Resource -->
+<!-- https://tecdn.b-cdn.net/img/Photos/Slides/img%20(22).jpg -->

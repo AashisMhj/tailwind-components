@@ -17,9 +17,9 @@ watch(() => route.fullPath, ()=>{
 </script>
 
 <template>
-  <FloatingBtn @toggle-sidebar="event =>toggleSideBar()" />
-  <SideBar :is_open="is_sidebar_open" @close="event => toggleSideBar()" />
   <ContainerLayout>
     <RouterView />
   </ContainerLayout>
+  <FloatingBtn @toggle-sidebar="event =>toggleSideBar()" />
+  <SideBar :is_open="is_sidebar_open" @close="event => toggleSideBar()" />
 </template>
