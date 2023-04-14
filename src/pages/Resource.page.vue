@@ -7,7 +7,7 @@ const resources = [
             "https://tailwindcomponents.com/",
             "https://www.hyperui.dev/components/application-ui",
             "https://flowbite.com/",
-            "https://tailwindui.com/components"
+            "https://tailwindui.com/components",
         ]
     },
     {
@@ -27,17 +27,17 @@ const resources = [
 ]
 </script>
 <template>
-    <div class="w-5/6 mx-auto">
-        <h1 class="leading-1 mx-auto text-3xl font-bold text-center">Resources</h1>
-        <section class="pt-5" v-for="item in resources">
-            <h2 class="text-lg font-semibold text-center">{{ item.title }}</h2>
-            <ul class="pt-5" v-for="listItem in item.data">
-                <a :href="listItem">
+    <main class="container max-w-4xl mx-auto pt-5 mb-5 h-screen bg-slate-50 px-2">
+        <h1 class="text-center text-4xl mb-10 tracking-widest">Resources</h1>
+        <section class="mt-6 mb-2" v-for="item in resources">
+            <h2 class="text-center text-2xl mb-5 tracking-wider">{{ item.title }}</h2>
+            <ul class="rounded" v-for="listItem in item.data">
+                <a class="p-4 py-2 tracking-side hover:underline hover:text-blue-400 transition-colors ease-in duration-100" :href="listItem" target="_blank">
                     <li>{{ listItem }}</li>
                 </a>
             </ul>
         </section>
-    </div>
+    </main>
 </template>
 
 <!-- Resource -->

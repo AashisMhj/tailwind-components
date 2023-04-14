@@ -1,5 +1,5 @@
 <template>
-    <main class="mx-auto w-11/12 pt-5">
+    <div class="mx-auto w-11/12 pt-5">
         <slot />
-    </main>
+    </div>
 </template>

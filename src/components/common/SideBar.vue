@@ -40,6 +40,10 @@ const navItems = [
             {
                 title: "News Letters",
                 path: path.newsLetters,
+            },
+            {
+                title: "Carousel",
+                path: path.carousel
             }
         ]
     },

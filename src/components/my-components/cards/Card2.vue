@@ -1,28 +1,12 @@
-<script setup>
-const img = "https://lh3.googleusercontent.com/ytP9VP86DItizVX2YNA-xTYzV09IS7rh4WexVp7eilIcfHmm74B7odbcwD5DTXmL0PF42i2wnRKSFPBHlmSjCblWHDCD2oD1oaM1CGFcSd48VBKJfsCi4bS170PKxGwji8CPmehwPw=w200-h247-no";
-const name = 'Jhony Doey'
-</script>
 <template>
-    <div class="card h-[37rem] rounded-sm flex flex-col items-center shadow-md text-white">
-        <img class="card-image" :src="img" alt="">
-        <p class="mt-4">{{ name }}</p>
-        <div class="grid-container">
-            <div class="grid-child-posts">
-                230 Post
-            </div>
-            <div class="grid-child-followers">
-                1220 Likes
-            </div>
+    <div class="block max-w-sm p-6 h-min bg-white border border-gray-200 rounded-lg shadow">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">The Title of the Card Title Should be big</h5>
+        <h6 class="mb-2 text-xl font-medium tracking-tighter text-gray-900">The Small Title</h6>
+        <p class="font-normal mb-2 text-gray-700">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dolorem maiores accusantium illum officiis quasi repudiandae? Ea, modi ipsam laboriosam doloribus id, eaque officia, sunt maiores excepturi earum quae in?
+        </p>
+        <div class="flex justify-center">
+            <button class="bg-blue-600 px-4 py-2 text-white rounded-lg hover:text-gray-200 hover:bg-blue-800 hover:outline-2">Learn More</button>
         </div>
-        <ul class="social-icons">
-        </ul>
-        <button>Follow</button>
-        <button>Message</button>
     </div>
 </template>
-
-<style scoped>
-.card{
-    background-color: #222831;
-}
-</style>
