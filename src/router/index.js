@@ -19,6 +19,7 @@ import DescriptionListDemo from '@/pages/layout-demos/DescriptionList.page.vue';
 import AnimationPage from '@/pages/animations/index.vue';
 import TransformationPage from '@/pages/animations/Transformation.vue';
 import TransitionPage from '@/pages/animations/Transition.vue';
+import TransformationEvents from '@/pages/animations/TransformationEvents.vue';
 //
 import PageHomePage from '@/pages/landing-pages/index.vue';
 import Page1 from '@/pages/landing-pages/page1.page.vue';
@@ -129,6 +130,11 @@ const router = createRouter({
       path: paths.transition,
       name: 'Transition ',
       component: TransitionPage
+    },
+    {
+      path: paths.transofrmationEvents,
+      name: 'Transformation Events',
+      component: TransformationEvents
     },
     // resource
     {

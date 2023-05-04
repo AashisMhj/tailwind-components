@@ -1,5 +1,7 @@
 <script setup>
 import Carousel1 from '@/components/my-components/carousel/Carousel1.vue';
+import Carousel2 from '@/components/my-components/carousel/Carousel2.vue';
+import Carousel3 from '@/components/my-components/carousel/Carousel3.vue';
 const data = [
     {
         "title": "Image 1",
@@ -29,5 +31,13 @@ const data = [
 ]
 </script>
 <template>
-    <Carousel1 :data="data" />
+    <section>
+        <Carousel1 :data="data" />
+    </section>
+    <section class="mt-2">
+        <Carousel2 />
+    </section>
+    <section class="mt-2">
+        <Carousel3 />
+    </section>
 </template>

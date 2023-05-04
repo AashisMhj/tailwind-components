@@ -19,6 +19,7 @@ export default {
     animationPage: "/animations",
     transformation: "/animations/transformation",
     transition: "/animations/transition",
+    transofrmationEvents: "/animations/transformation-events",
     //
     pages: "/page",
     page1: "/page/1",

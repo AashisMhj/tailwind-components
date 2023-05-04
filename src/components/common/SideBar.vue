@@ -76,6 +76,10 @@ const navItems = [
             {
                 title: "Transition",
                 path: path.transition
+            },
+            {
+                title: 'Transformation on Events',
+                path: path.transofrmationEvents
             }
         ]
     },

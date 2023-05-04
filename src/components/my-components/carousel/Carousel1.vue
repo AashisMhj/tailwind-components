@@ -6,7 +6,7 @@ defineProps({
 });
 </script>
 <template>
-    <div class="relative ">
+    <div class="relative">
         <!-- carousel indicator -->
         <div class="absolute bottom-0 left-0 right-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0">
             <button v-for="item in data" type="button"
