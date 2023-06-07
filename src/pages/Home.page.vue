@@ -34,13 +34,6 @@ const sections = [
         ]
     },
     {
-        title: "Pages",
-        path: paths.pages,
-        data: [
-            { title: "Page 1", path: paths.page1 }
-        ]
-    },
-    {
         title: "Resources",
         path: paths.resourcesPage,
         data: []

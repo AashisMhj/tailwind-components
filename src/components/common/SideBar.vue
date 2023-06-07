@@ -84,16 +84,6 @@ const navItems = [
         ]
     },
     {
-        title: "Pages",
-        path: path.pages,
-        children: [
-            {
-                title: "Page 1",
-                path: path.page1
-            }
-        ]
-    },
-    {
         title: "Playground",
         path: path.playGroundPage
     },

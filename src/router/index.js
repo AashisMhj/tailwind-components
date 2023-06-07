@@ -21,9 +21,6 @@ import TransformationPage from '@/pages/animations/Transformation.vue';
 import TransitionPage from '@/pages/animations/Transition.vue';
 import TransformationEvents from '@/pages/animations/TransformationEvents.vue';
 //
-import PageHomePage from '@/pages/landing-pages/index.vue';
-import Page1 from '@/pages/landing-pages/page1.page.vue';
-//
 import Playground from '@/pages/Playground.vue';
 import resourcePage from '@/pages/Resource.page.vue';
 import paths from './paths';
@@ -86,7 +83,7 @@ const router = createRouter({
     // 
     {
       path: paths.layoutsPage,
-      name: "Layouts",
+      name: "Layouts/ Sections",
       component: LayoutHomePage
     },
     {
@@ -103,17 +100,6 @@ const router = createRouter({
       path: paths.descriptionListDemo,
       name: 'Description List Demo',
       component: DescriptionListDemo
-    },
-    // 
-    {
-      path: paths.pages,
-      name: "Landing Pages",
-      component: PageHomePage
-    },
-    {
-      path: paths.page1,
-      name: 'Page 1',
-      component: Page1
     },
     // animation
     {
